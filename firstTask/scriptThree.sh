@@ -1,4 +1,5 @@
 #!/bin/bash
+shopt -s expand_aliases
 
 sudo adduser test
 sudo deluser test
@@ -16,11 +17,10 @@ rm -rf dirOne
 
 find One.txt
 
-alias first='head -n 2 One.txt'
-alias show='first'
+alias show='cat One.txt'
 show
 
-unalias first show
+unalias show
 
 date >> One.txt
 
@@ -30,6 +30,7 @@ mv One.txt folder
 cp scriptOne.sh folder
 mv folder folderModefied
 
+rm -rf folderModefied
+
 echo "Script Have Succesfully Ran "
 sudo su hima
-
