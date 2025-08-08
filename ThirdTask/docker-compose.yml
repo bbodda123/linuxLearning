@@ -6,7 +6,7 @@ services:
     container_name: Data_Base
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 
+      MYSQL_ROOT_PASSWORD:rootPass #You Can Change That ... Create Your Own Password For More Secure 
       MYSQL_DATABASE: petclinic
       MYSQL_USER: petclinic
       MYSQL_PASSWORD: petclinic
