@@ -19,5 +19,6 @@ RUN ./mvnw package
 # 6. Copy all project files from your machine to the container
 COPY . .
 
+
 # 7. Set the default process
 ENTRYPOINT ["./mvnw","spring-boot:run"]

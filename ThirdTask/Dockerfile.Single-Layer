@@ -16,4 +16,5 @@ COPY . .
 
 # 5. Runtime stage
 cmd ["./mvnw","spring-boot:run"]
+
 ENTRYPOINT [ "echo" , "App Has Started" ]
